@@ -11,4 +11,4 @@ def mock_views_df():
         .config("spark.ui.enabled", False)
         .getOrCreate()
     )
-    return spark.read.json("./tests/sample-data.json")
+    return spark.read.json("./test/sample-data.json")
