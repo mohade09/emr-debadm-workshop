@@ -37,4 +37,4 @@ jobs:
 
       - name: Start pyspark job
         run: |
-          scripts/integration_test.sh $TEST_APPLICATION_ID $JOB_ROLE_ARN $TEST_S3_BUCKET_NAME $GITHUB_SHA validation.py s3://${SAMPLE_DATA_S3_BUCKET_NAME}/github/traffic/
+          scripts/integration_test.sh $TEST_APPLICATION_ID $JOB_ROLE_ARN $TEST_S3_BUCKET_NAME $GITHUB_SHA validation.py s3://ant309-test-956067727513/sample-data/aws-samples/emr-serverless/data.json
