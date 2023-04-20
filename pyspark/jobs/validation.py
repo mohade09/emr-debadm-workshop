@@ -26,7 +26,7 @@ if __name__ == "__main__":
     gh = GitHubViews()
     daily_metrics = gh.extract_latest_daily_metrics(df)
 
-    validation_df = daily_metrics.filter(daily_metrics.repo == 'aws-samples/emr-serverless-samples')
+    validation_df = daily_metrics.filter(daily_metrics.repo == 'aws-samples/emr-serverless')
 
     count = validation_df.count()
     min_views = validation_df.agg({"count": "min"}).collect()[0][0]
