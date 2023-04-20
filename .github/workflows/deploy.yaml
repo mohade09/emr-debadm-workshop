@@ -6,8 +6,8 @@ on:
 
 env:
   PROD_S3_BUCKET_NAME: ant309-prod-${{ secrets.AWS_ACCOUNT_ID }}
-  OIDC_ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/reinvent-demo-GitHubOIDCRole-17QJZ0JHMZMHU
-  AWS_REGION: us-east-1
+  OIDC_ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubOIDCRole
+  AWS_REGION: eu-central-1
       
 jobs:
   deploy:
